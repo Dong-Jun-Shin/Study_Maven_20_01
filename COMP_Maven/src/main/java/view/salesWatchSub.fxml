@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="450.0" prefWidth="340.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalesWatchSubController">
+	<children>
+		<Label fx:id="lblTitle" text="[제품정보]">
+			<font>
+				<Font name="System Bold" size="30.0" />
+			</font>
+			<VBox.margin>
+				<Insets />
+			</VBox.margin>
+			<padding>
+				<Insets bottom="20.0" left="10.0" top="10.0" />
+			</padding>
+		</Label>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPNum" alignment="CENTER" prefWidth="60.0" text="제품번호" />
+				<TextField fx:id="txtPNum" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPName" alignment="CENTER" prefWidth="60.0" text="제품명" />
+				<TextField fx:id="txtPName" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPPrice" alignment="CENTER" prefWidth="60.0" text="단가" />
+				<TextField fx:id="txtPPrice" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPSize" alignment="CENTER" prefWidth="60.0" text="크기" />
+				<TextField fx:id="txtPSize" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPGrt" alignment="CENTER" prefWidth="60.0" text="보증기간" />
+				<TextField fx:id="txtPGrt" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<HBox alignment="CENTER" prefHeight="63.0" prefWidth="280.0" spacing="20.0">
+			<children>
+				<Label fx:id="lblPDate" alignment="CENTER" prefWidth="60.0" text="출시일" />
+				<TextField fx:id="txtPDate" prefWidth="160.0" />
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</HBox>
+		<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+			<children>
+				<Button fx:id="btnSelProduct" mnemonicParsing="false" text="제품 선택">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</Button>
+			</children>
+		</VBox>
+	</children>
+	<padding>
+		<Insets left="10.0" right="10.0" top="20.0" />
+	</padding>
+</VBox>

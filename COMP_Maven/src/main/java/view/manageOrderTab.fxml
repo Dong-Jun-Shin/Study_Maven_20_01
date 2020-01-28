@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManageOrderTabController">
+	<VBox alignment="CENTER" prefHeight="370.0" prefWidth="1100.0">
+		<children>
+			<Label alignment="CENTER" text="[진행 중인 주문]">
+				<font>
+					<Font size="30.0" />
+				</font>
+			</Label>
+			<HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="1000.0" spacing="10.0">
+				<padding>
+					<Insets bottom="10.0" />
+				</padding>
+				<children>
+					<Label prefHeight="19.0" prefWidth="130.0" text="현재 선택된 주문 : ">
+						<font>
+							<Font size="15.0" />
+						</font>
+					</Label>
+					<Label fx:id="lblCDNum" alignment="CENTER" prefWidth="100.0" text="(주문번호)">
+						<font>
+							<Font size="15.0" />
+						</font>
+					</Label>
+					<Button fx:id="btnOrderComplete" mnemonicParsing="false" onAction="#btnOrderComplete" prefHeight="23.0" prefWidth="90.0" text="거래완료" />
+					<Button fx:id="btnOrderCancel" mnemonicParsing="false" onAction="#btnOrderCancel" prefHeight="23.0" prefWidth="90.0" text="주문취소" />
+				</children>
+			</HBox>
+			<TableView fx:id="orderProgressView" onMouseClicked="#orderProgressView" prefHeight="600.0" prefWidth="690.0">
+				<columns>
+					<TableColumn prefWidth="100.0" text="거래구분" />
+					<TableColumn prefWidth="150.0" text="주문번호" />
+					<TableColumn prefWidth="100.0" text="고객ID" />
+					<TableColumn prefWidth="110.0" text="고객명" />
+					<TableColumn prefWidth="150.0" text="고객 전화번호" />
+					<TableColumn prefWidth="200.0" text="고객 주소" />
+					<TableColumn prefWidth="200.0" text="고객 이메일" />
+					<TableColumn prefWidth="130.0" text="총 주문금액" />
+					<TableColumn prefWidth="100.0" text="CPU번호" />
+					<TableColumn prefWidth="100.0" text="CPU수량" />
+					<TableColumn prefWidth="100.0" text="RAM번호" />
+					<TableColumn prefWidth="100.0" text="RAM수량" />
+					<TableColumn prefWidth="100.0" text="MB번호" />
+					<TableColumn prefWidth="100.0" text="MB수량" />
+					<TableColumn prefWidth="100.0" text="GPU번호" />
+					<TableColumn prefWidth="100.0" text="GPU수량" />
+					<TableColumn prefWidth="100.0" text="SSD번호" />
+					<TableColumn prefWidth="100.0" text="SSD수량" />
+					<TableColumn prefWidth="100.0" text="HDD번호" />
+					<TableColumn prefWidth="100.0" text="HDD수량" />
+					<TableColumn prefWidth="100.0" text="파워번호" />
+					<TableColumn prefWidth="100.0" text="파워수량" />
+					<TableColumn prefWidth="100.0" text="케이스번호" />
+					<TableColumn prefWidth="100.0" text="케이스수량" />
+					<TableColumn prefWidth="100.0" text="쿨러번호" />
+					<TableColumn prefWidth="100.0" text="쿨러수량" />
+					<TableColumn prefWidth="100.0" text="SW번호" />
+					<TableColumn prefWidth="100.0" text="SW수량" />
+					<TableColumn prefWidth="100.0" text="키보드번호" />
+					<TableColumn prefWidth="100.0" text="키보드수량" />
+					<TableColumn prefWidth="100.0" text="마우스번호" />
+					<TableColumn prefWidth="100.0" text="마우스수량" />
+					<TableColumn prefWidth="100.0" text="스피커번호" />
+					<TableColumn prefWidth="100.0" text="스피커수량" />
+					<TableColumn prefWidth="100.0" text="모니터번호" />
+					<TableColumn prefWidth="100.0" text="모니터수량" />
+				</columns>
+			</TableView>
+		</children>
+		<padding>
+			<Insets bottom="20.0" left="50.0" right="50.0" top="15.0" />
+		</padding>
+	</VBox>
+	<VBox alignment="CENTER" layoutY="370.0" prefHeight="375.0" prefWidth="1100.0" spacing="10.0">
+		<children>
+			<Label alignment="CENTER" text="[이전 주문 내역]">
+				<font>
+					<Font size="30.0" />
+				</font>
+			</Label>
+			<TableView fx:id="orderHistoryView" prefHeight="600.0" prefWidth="690.0">
+				<columns>
+					<TableColumn prefWidth="100.0" text="거래구분" />
+					<TableColumn prefWidth="150.0" text="주문번호" />
+					<TableColumn prefWidth="100.0" text="고객ID" />
+					<TableColumn prefWidth="110.0" text="고객명" />
+					<TableColumn prefWidth="150.0" text="고객 전화번호" />
+					<TableColumn prefWidth="200.0" text="고객 주소" />
+					<TableColumn prefWidth="200.0" text="고객 이메일" />
+					<TableColumn prefWidth="130.0" text="총 주문금액" />
+               <TableColumn prefWidth="100.0" text="CPU번호" />
+               <TableColumn prefWidth="100.0" text="CPU수량" />
+               <TableColumn prefWidth="100.0" text="RAM번호" />
+               <TableColumn prefWidth="100.0" text="RAM수량" />
+               <TableColumn prefWidth="100.0" text="MB번호" />
+               <TableColumn prefWidth="100.0" text="MB수량" />
+               <TableColumn prefWidth="100.0" text="GPU번호" />
+               <TableColumn prefWidth="100.0" text="GPU수량" />
+               <TableColumn prefWidth="100.0" text="SSD번호" />
+               <TableColumn prefWidth="100.0" text="SSD수량" />
+               <TableColumn prefWidth="100.0" text="HDD번호" />
+               <TableColumn prefWidth="100.0" text="HDD수량" />
+               <TableColumn prefWidth="100.0" text="파워번호" />
+               <TableColumn prefWidth="100.0" text="파워수량" />
+               <TableColumn prefWidth="100.0" text="케이스번호" />
+               <TableColumn prefWidth="100.0" text="케이스수량" />
+               <TableColumn prefWidth="100.0" text="쿨러번호" />
+               <TableColumn prefWidth="100.0" text="쿨러수량" />
+               <TableColumn prefWidth="100.0" text="SW번호" />
+               <TableColumn prefWidth="100.0" text="SW수량" />
+               <TableColumn prefWidth="100.0" text="키보드번호" />
+               <TableColumn prefWidth="100.0" text="키보드수량" />
+               <TableColumn prefWidth="100.0" text="마우스번호" />
+               <TableColumn prefWidth="100.0" text="마우스수량" />
+               <TableColumn prefWidth="100.0" text="스피커번호" />
+               <TableColumn prefWidth="100.0" text="스피커수량" />
+               <TableColumn prefWidth="100.0" text="모니터번호" />
+               <TableColumn prefWidth="100.0" text="모니터수량" />
+				</columns>
+			</TableView>
+		</children>
+		<padding>
+			<Insets bottom="20.0" left="50.0" right="50.0" top="15.0" />
+		</padding>
+	</VBox>
+</VBox>

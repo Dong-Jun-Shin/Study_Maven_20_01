@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="800.0" prefWidth="1100.0"
+	xmlns="http://javafx.com/javafx/8.0.171"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controller.SalesMainController"> 
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+				<Menu mnemonicParsing="false" text="메뉴">
+					<items>
+						<MenuItem mnemonicParsing="false" onAction="#menuLogout" text="로그아웃" />
+						<MenuItem mnemonicParsing="false" text="종료" onAction="#menuClose"/>
+					</items>
+				</Menu>
+				<Menu mnemonicParsing="false" text="정보">
+					<items>
+						<MenuItem mnemonicParsing="false" text="문의하기" onAction="#menuConnectInfo"/>
+						<MenuItem mnemonicParsing="false" text="프로그램 정보" onAction="#menuProgramInfo"/>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	<center>
+		<TabPane fx:id="salesMainPane" prefHeight="200.0" prefWidth="200.0"
+			tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+			<tabs>
+				<Tab text="제품조회" fx:id="watch">
+					<content>
+						<fx:include fx:id="salesWatchTab"
+							source="/view/salesWatchTab.fxml" />
+					</content>
+				</Tab>
+				<Tab text="주문하기" fx:id="trade">
+					<content>
+						<fx:include fx:id="salesTradeTab"
+							source="/view/salesTradeTab.fxml" />
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</center>
+</BorderPane>
