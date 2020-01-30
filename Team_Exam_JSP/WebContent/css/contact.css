@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+table {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+table tr:after {		/* 만약에 */
+	content: '';
+	display: block;
+	float: none;
+	clear: both;
+}
+
+table .left {
+	text-align: left;
+}
+
+thead, tbody, tr {
+	display: block;
+	width: 100%;
+}
+
+td, th {
+	display: block;
+	float: left;
+	padding: 10px 0;
+}
+
+
+table thead {
+	border-top: 2px solid #00bd39;
+	border-bottom: 2px solid #00bd39;
+	font-weight: bold;
+}
+
+table tbody tr {
+	border-bottom: 1px dotted #ccc;
+}
+
+
+.example table .no {
+	width: 10%;
+}
+
+.example table .title {
+	width: 50%;
+}
+
+.example table .user {
+	width: 10%;
+}
+
+.example table .date {
+	width: 20%;
+}
+
+.example table .response {
+	width: 10%;
+	color:#00bd39;
+}
+
+#search{
+	color:white;
+	background:#00bd39;
+	border:1px solid #00bd39;
+}
+.exec{
+	margin-right: 0px;
+	width: 10%;
+	
+}
+
+#select {
+	margin-top: 50px;
+}
+
+#contact-template {
+	display: none;
+}
+td.title{
+	text-align:left;
+}
+.clear{
+	text-align:center;
+	margin-bottom: 40px;
+	
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+#section{
+	height: 680px;
+}
+
+#section .container h1{
+	padding-left: 10px;
+	margin-bottom: 15px;
+}
+
+#section .container > div#map{
+	width: 100%;
+	height: 525px;
+	border: 1px solid #cbcbcb;
+}

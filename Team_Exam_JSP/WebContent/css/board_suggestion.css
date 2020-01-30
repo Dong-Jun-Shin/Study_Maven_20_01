@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+table {
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+}
+
+table tr:after {		/* 만약에 */
+	content: '';
+	display: block;
+	float: none;
+	clear: both;
+}
+
+table .left {
+	text-align: center;
+}
+
+thead, tbody, tr {
+	display: block;
+	width: 100%;
+}
+
+td, th {
+	display: block;
+	float: left;
+	padding: 10px 0;
+}
+
+table thead {
+	border-bottom: 2px solid #00bd39;
+	border-top: 1px solid #00bd39;
+	font-weight: bold;
+}
+
+table tbody tr {
+	border-bottom: 1px dotted #ccc;
+}
+
+.example  table {
+	border-top: 1px solid #00bd39;
+	margin-bottom: 10px;
+}
+
+.example {
+	height: 82%;
+	overflow: hidden;
+}
+
+.example table .no {
+	width: 8%;
+}
+
+.example table .best {
+	width: 10%;
+	color: red;
+	font-weight: bold;
+}
+
+.example table .subject {
+	width: 44%;
+}
+
+.example table .writer {
+	width: 10%;
+}
+
+.example table .hit {
+	width: 8%;
+}
+
+.example table .date {
+	width: 20%;
+}
+
+.exec {
+	text-align: right;
+	font-size: 14px;
+	font-weight: bold;
+	width: 8%;
+	margin-right: 0;
+	margin-bottom: 5px;
+}
+
+.plus {
+	width: 7%;
+	height: 10px;
+	text-align: center;
+}
+
+
+#more {
+	border-radius: 30px;
+	color: white;
+	background: #00bd39;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+	border: 2px solid #00bd39;
+	font-weight: bold;
+	padding: 5px 30px;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+#best {
+	border-radius: 30px;
+	color: white;
+	background: #00bd39;
+	margin-bottom: 30px;
+	margin-top: 15px;
+	cursor: pointer;
+	border: 2px solid #00bd39;
+	font-weight: bold;
+	padding: 5px 30px;
+	line-height: 30px;
+	font-size: 15px;
+}
+
+table .best > input{
+	border-radius: 30px;
+	color: white;
+	background: #00bd39;
+	cursor: pointer;
+	border: 2px solid #00bd39;
+	font-weight: bold;
+	padding: 3px 10px;
+	line-height: 10px;
+	font-size: 15px;
+	
+}
+
+#suggestion-template {
+	display: none;
+}
+
+#item-template{
+	display:none;
+}

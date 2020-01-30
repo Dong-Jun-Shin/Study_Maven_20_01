@@ -1,0 +1,10 @@
+{
+	"schedule": {
+		"title": "전당 일정", 
+		"item": [
+			{"category": "교육", "content": "2020년 겨울방학 교원연수"},
+			{"category": "교육", "content": "대한민국역사꿈마을 이야기"},
+			{"category": "교육", "content": "소리, 역사를 담다"}
+		]
+	}
+}

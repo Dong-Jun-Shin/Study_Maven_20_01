@@ -1,0 +1,109 @@
+﻿/** 슬라이더 영역을 기본적으로 숨긴다. 플러그인에서 재구성하게 된다. */
+#slides {
+	display: none
+}
+
+/** "이전/다음" 버튼 박스 */
+#slides .slidesjs-navigation {
+	margin-top: 5px;
+}
+
+/** "이전/다음", "재생/중지" 버튼 링크에 대한 배경이미지 처리 */
+a.slidesjs-next, a.slidesjs-previous, a.slidesjs-play, a.slidesjs-stop {
+	background-image: url('../image/btns-next-prev.png');
+	background-repeat: no-repeat;
+	display: block;
+	width: 12px;
+	height: 18px;
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	margin-right: 5px;
+}
+
+/** "다음"버튼의 이미지 클립핑 */
+a.slidesjs-next {
+	margin-right: 10px;
+	background-position: -12px 0;
+}
+
+/** "다음"버튼의 마우스 오버 상태시 클립핑 변경 */
+a:hover.slidesjs-next {
+	background-position: -12px -18px;
+}
+
+/** "이전"버튼의 이미지 */
+a.slidesjs-previous {
+	background-position: 0 0;
+}
+
+/** "이전"버튼의 마우스 오버 상태시  이미지 변경 */
+a:hover.slidesjs-previous {
+	background-position: 0 -18px;
+}
+
+/** "재생"버튼의 이미지 */
+a.slidesjs-play {
+	width: 15px;
+	background-position: -25px 0;
+}
+
+/** "재생"버튼의 마우스 오버 상태시 이미지 */
+a:hover.slidesjs-play {
+	background-position: -25px -18px;
+}
+
+/** "중지"버튼의 이미지 */
+a.slidesjs-stop {
+	width: 18px;
+	background-position: -41px 0;
+}
+
+/** "중지"버튼의 마우스 오버 상태시 이미지 */
+a:hover.slidesjs-stop {
+	background-position: -41px -18px;
+}
+
+/** 페이지번호(현재위치) 버튼 영역 */
+.slidesjs-pagination {
+	margin: 6px 0 0;
+	float: right;
+	list-style: none;
+}
+
+/** 페이지번호(현재위치) 버튼의 각 항목 */
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+/** 페이지번호(현재위치) 버튼의 링크 */
+.slidesjs-pagination li a {
+	display: block;
+	width: 13px;
+	height: 0;
+	padding-top: 13px;
+	background-image: url('../image/pagination.png');
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+/** 페이지번호(현재위치) 버튼의 링크에 대한 마우스 클릭 상태 */
+.slidesjs-pagination li a.active, .slidesjs-pagination li a:hover.active {
+	background-position: 0 -13px
+}
+
+/** 페이지번호(현재위치) 버튼의 링크에 대한 마우스 오버 */
+.slidesjs-pagination li a:hover {
+	background-position: 0 -26px
+}
+
+/** 페이지번호(현재위치) 버튼의 링크 중 방문했던 링크의 처리 */
+#slides a:link, #slides a:visited {
+	color: #333
+}
+
+#slides a:hover, #slides a:active {
+	color: #9e2020;
+}

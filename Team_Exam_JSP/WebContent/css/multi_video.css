@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* 전체 요소의 기본 여백 초기화 */
+* {
+	padding: 0;
+	margin: 0;
+}
+section#section {
+    width: 100%;
+    height: auto;
+    padding: 30px 0px;
+    background: #fafafa;
+}
+/* 탭 박스의 기본 크기와 중앙 정렬 및 상하 여백 */
+.container {
+	width: 1280px;
+	margin: 0px auto;
+}
+/* 탭 버튼의 초기화 및 레이어 띄우기>내용영역과 1px 겹쳐야 한다. */
+ul.tab {
+	list-style: none;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 1px;
+}
+/* 개별 버튼에 대한 기본 크기와 가로 정렬*/
+ul.tab li {
+	width: 100px;
+	height: 40px;
+	float: left;
+	border-collapse: collapse;
+}
+
+/*float 속성 해제 처리*/
+ul:after {
+	content: '';
+	display: block;
+	float: none;
+	clear: both;
+}
+
+/*탭버튼의 기본 배경 처리와 글자 형태 처리*/
+ul.tab li a {
+	background-color:white;
+	display: block;
+	color: #222;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid lightgray;
+	border-bottom-color:white;
+	border-collapse: collapse;
+}
+
+/*현재 활성 캡에 배경 이미지 별도 처리*/
+ul.tab li a.pike {
+	background-color: #00bd39;
+	border-color: #00bd39;
+}
+
+/*내용 영역의 테두리처리 및 상단으로 -1px 이동시킴 / 버튼 영역과 1px 겹치게 처리해서 활성 탭이 뚤력 있는 효과 연출*/
+div.vido {
+	border: 1px solid black;
+	position: relative;
+	top: -1px;
+	padding: 10px;
+	margin: 0px;
+	overflow: auto;
+	width:1320px; 
+	height:750px;
+	background-color: black;
+	text-align: center;
+}
