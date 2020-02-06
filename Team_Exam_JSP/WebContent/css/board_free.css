@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+html{
+	margin: 0px 20px;
+}
+
+td > a {
+	color: black;
+}
+
 table {
 	display: block;
 	width: 100%;
@@ -37,10 +45,6 @@ table thead {
 
 table tbody tr {
 	border-bottom: 1px dotted #ccc;
-}
-
-#free-template {
-	display:none;
 }
 
 .example  table {
@@ -88,6 +92,9 @@ table tbody tr {
 	text-align: center;
 }
 
+.search{
+	float: right;
+}
 
 #more {
 	border-radius: 30px;
